@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinity-Fit | Founder Master Execution Blueprint & Step-by-Step Field Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090c14;
+      --card-bg: #ffffff;
+      --text-dark: #0f172a;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --line: #e2e8f0;
+      --line-active: #ff4757;
+      --accent: #ff4757;
+      --accent-soft: rgba(255, 71, 87, 0.08);
+      --cyan: #0ea5e9;
+      --green: #10b981;
+      --gold: #f59e0b;
+      --purple: #8b5cf6;
+      --radius-lg: 36px;
+      --radius-md: 20px;
+      --radius-sm: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 50% 0%, #1c2438 0%, #090c14 75%);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 2rem 1rem 6rem;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* TOP STICKY BAR */
+    .top-action-bar {
+      max-width: 1040px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-pill {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-pdf {
+      background: #ffffff;
+      color: #0f172a;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      border-radius: 24px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .btn-pdf:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+    }
+
+    /* MAIN WHITE CANVAS (MATCHING USER SCREENSHOT) */
+    .white-canvas {
+      max-width: 1040px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 4.5rem 3.5rem;
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    }
+
+    /* SECTION HEADER (EXACT SCREENSHOT STYLE) */
+    .header-center {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .process-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+
+    .process-pill span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #0f172a;
+      display: inline-block;
+    }
+
+    .header-center h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .header-center p {
+      font-size: 1.18rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* SIMPLE TARGET SCOREBOARD */
+    .target-banner {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .target-item {
+      padding: 0.5rem 0.75rem;
+    }
+
+    .target-item:not(:last-child) {
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .target-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .target-big {
+      font-size: 1.95rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -0.5px;
+      margin-bottom: 0.15rem;
+    }
+
+    .target-foot {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .target-foot.cyan { color: var(--cyan); }
+    .target-foot.green { color: var(--green); }
+    .target-foot.gold { color: var(--gold); }
+    .target-foot.purple { color: var(--purple); }
+
+    /* ========================================================= */
+    /* THE "HOW WE WORK" TIMELINE (EXACT SCREENSHOT LAYOUT)      */
+    /* ========================================================= */
+    .timeline-container {
+      position: relative;
+      margin: 3.5rem 0 5rem;
+    }
+
+    /* Central Vertical Line */
+    .timeline-container::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(180deg, #ff4757 0%, #cbd5e1 30%, #e2e8f0 100%);
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      margin-bottom: 2.75rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-row.active-row {
+      background: #f8fafc;
+      border: 1px solid #edf2f7;
+      border-radius: 28px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+    }
+
+    .row-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 2.5rem;
+      gap: 1.25rem;
+      text-align: right;
+    }
+
+    .row-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 2.5rem;
+      gap: 1.25rem;
+      text-align: left;
+    }
+
+    .center-dot {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3px solid #cbd5e1;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      transition: all 0.3s ease;
+    }
+
+    .center-dot.active-glow {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 5px rgba(255, 71, 87, 0.2);
+      background: var(--accent);
+    }
+
+    .squircle-icon {
+      width: 58px;
+      height: 58px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+      flex-shrink: 0;
+      font-size: 1.6rem;
+      transition: transform 0.2s ease;
+    }
+
+    .squircle-icon.dark {
+      background: #111827;
+      border-color: #111827;
+      color: #ffffff;
+    }
+
+    .timeline-row:hover .squircle-icon {
+      transform: scale(1.05);
+    }
+
+    .num-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 0.2rem 0.55rem;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      max-width: 320px;
+    }
+
+    .step-text h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.3px;
+    }
+
+    .step-text p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* CONTENT SECTION */
+    .content-section {
+      margin-top: 5rem;
+      padding-top: 3.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      margin-bottom: 2.25rem;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-head p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    /* PRACTICAL HOW-TO DETAIL CARDS */
+    .howto-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease;
+    }
+
+    .howto-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+    }
+
+    .howto-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .howto-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .howto-badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-cyan { background: #e0f2fe; color: #0369a1; }
+    .badge-green { background: #dcfce7; color: #15803d; }
+    .badge-gold { background: #fef3c7; color: #b45309; }
+    .badge-red { background: #fee2e2; color: #b91c1c; }
+
+    .howto-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .howto-block {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+    }
+
+    .howto-block h4 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .howto-block p, .howto-block li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .howto-block ul {
+      padding-left: 1.2rem;
+    }
+
+    .script-box {
+      background: #ffffff;
+      border: 1px dashed #cbd5e1;
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .script-box h5 {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .script-box p {
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    /* 12-WEEK STEP-BY-STEP CALENDAR */
+    .week-detail-box {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .week-detail-box.cyan { border-left-color: var(--cyan); }
+    .week-detail-box.gold { border-left-color: var(--gold); }
+    .week-detail-box.green { border-left-color: var(--green); }
+
+    .week-detail-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .week-detail-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .week-detail-target {
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: #f1f5f9;
+      padding: 0.25rem 0.65rem;
+      border-radius: 12px;
+      color: #334155;
+    }
+
+    .day-steps-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .day-step-item {
+      font-size: 0.86rem;
+      color: #334155;
+    }
+
+    .day-step-item strong {
+      display: block;
+      color: var(--text-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    /* TABLES */
+    .table-box {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      margin-top: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      min-width: 600px;
+    }
+
+    th {
+      background: #f8fafc;
+      color: #334155;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    td {
+      padding: 1.05rem 1.25rem;
+      font-size: 0.92rem;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* PRINT */
+    @media print {
+      body { background: #fff !important; padding: 0 !important; }
+      .top-action-bar { display: none !important; }
+      .white-canvas { box-shadow: none !important; border: none !important; padding: 1rem !important; }
+      .timeline-row.active-row { background: #fff !important; border: 1px solid #ddd !important; }
+    }
+
+    @media (max-width: 768px) {
+      .white-canvas { padding: 2.5rem 1.5rem; border-radius: 24px; }
+      .header-center h1 { font-size: 2.2rem; }
+      .target-banner { grid-template-columns: 1fr 1fr; }
+      .target-item:not(:last-child) { border-right: none; border-bottom: 1px solid #e2e8f0; }
+
+      .timeline-container::before { left: 24px; }
+      .timeline-row { grid-template-columns: 1fr; margin-bottom: 2rem; }
+      .timeline-row.active-row { margin: 0 0 2rem; }
+      .row-left, .row-right {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+        flex-direction: row-reverse;
+      }
+      .center-dot { left: 24px; top: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar -->
+  <div class="top-action-bar">
+    <div class="brand-pill">
+      <span>🔥 TRINITY-FIT</span>
+      <span>•</span>
+      <span>Founder Master Field Manual</span>
+    </div>
+    <button class="btn-pdf" onclick="window.print()">
+      <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+      Print or Save as PDF
+    </button>
+  </div>
+
+  <!-- MAIN CANVAS -->
+  <div class="white-canvas">
+
+    <!-- HEADER -->
+    <div class="header-center">
+      <div class="process-pill">
+        <span class="dot"></span>
+        <span>001 • THE 90-DAY STRATEGY</span>
+      </div>
+      <h1>The Complete Launch & Execution Playbook</h1>
+      <p>The exact, step-by-step practical manual for every single day: How we visit gyms, pitch managers, onboard trainers, run social media, and reach ₹5,00,000 monthly revenue.</p>
+    </div>
+
+    <!-- TARGET SCOREBOARD (FROM NOTEBOOK) -->
+    <div class="target-banner">
+      <div class="target-item">
+        <div class="target-tag">Day 1 Launch</div>
+        <div class="target-big">20</div>
+        <div class="target-foot">Friends & Family Reviews</div>
+      </div>
+      <div class="target-item">
+        <div class="target-tag">Week 1 Target</div>
+        <div class="target-big">300</div>
+        <div class="target-foot cyan">First 10 Gym Stands</div>
+      </div>
+      <div class="target-item">
+        <div class="target-tag">Month 1 Target</div>
+        <div class="target-big">1,200</div>
+        <div class="target-foot gold">Earn ₹1,00,000</div>
+      </div>
+      <div class="target-item">
+        <div class="target-tag">Month 2 Target</div>
+        <div class="target-big">3,000</div>
+        <div class="target-foot green">Earn ₹3,00,000</div>
+      </div>
+      <div class="target-item">
+        <div class="target-tag">Month 3 Target</div>
+        <div class="target-big">10,000</div>
+        <div class="target-foot purple">Earn ₹5,00,000</div>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- 5 STEPS TIMELINE (EXACT USER SCREENSHOT RECREATION)        -->
+    <!-- ========================================================= -->
+    <div class="header-center" style="margin-bottom: 2rem;">
+      <div class="process-pill">
+        <span class="dot"></span>
+        <span>002 • 5 CORE PHASES</span>
+      </div>
+      <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px;">How the Whole Machine Works</h2>
+      <p>From raising investor funds to ground marketing, trainer onboarding, and revenue collection.</p>
+    </div>
+
+    <div class="timeline-container">
+
+      <!-- STEP 1 (ACTIVE HIGHLIGHTED) -->
+      <div class="timeline-row active-row">
+        <div class="row-left">
+          <div class="step-text">
+            <h3>Show Investors Our Demo</h3>
+            <p>Show our live demo website and working app. Prove that our 18% coach fee makes us profitable from Day 1.</p>
+          </div>
+          <span class="num-pill">01</span>
+        </div>
+        <div class="center-dot active-glow"></div>
+        <div class="row-right">
+          <div class="squircle-icon dark">💼</div>
+          <div class="step-text" style="text-align: left;">
+            <p style="font-weight: 800; color: var(--accent); font-size: 0.85rem; text-transform: uppercase;">Funding Target</p>
+            <p style="font-size: 0.88rem; color: #475569;">Raise ₹15–25 Lakhs to print 100+ acrylic stands, sponsor marathons, and hire field sales reps.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="timeline-row">
+        <div class="row-left">
+          <div class="squircle-icon">📍</div>
+          <span class="num-pill">02</span>
+        </div>
+        <div class="center-dot"></div>
+        <div class="row-right">
+          <div class="step-text">
+            <h3>Field Blitz in 7 Places</h3>
+            <p>Our sales reps visit 5 gyms, 3 cafes, and 2 salons daily. Install acrylic counter stands with direct QR download links.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="timeline-row">
+        <div class="row-left">
+          <div class="step-text">
+            <h3>Onboard 10 Coaches Weekly</h3>
+            <p>Gym trainers bring all their clients to Trinity-Fit. 1 trainer brings 20 new active trainees to our app immediately.</p>
+          </div>
+          <span class="num-pill">03</span>
+        </div>
+        <div class="center-dot"></div>
+        <div class="row-right">
+          <div class="squircle-icon">🏋️‍♂️</div>
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="timeline-row">
+        <div class="row-left">
+          <div class="squircle-icon">📱</div>
+          <span class="num-pill">04</span>
+        </div>
+        <div class="center-dot"></div>
+        <div class="row-right">
+          <div class="step-text">
+            <h3>Post 3 Reels Daily & WhatsApp Club</h3>
+            <p>Post 3 short reels every day (Humor at 9 AM, Form fix at 1 PM, Calculator at 7 PM). Run our VIP WhatsApp community.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="timeline-row">
+        <div class="row-left">
+          <div class="step-text">
+            <h3>Scale to 10,000 Users & ₹5 Lakhs</h3>
+            <p>By Month 3, 10,000 users are tracking workouts, 250+ clients pay coaches, and we take ₹5 Lakhs every single month!</p>
+          </div>
+          <span class="num-pill">05</span>
+        </div>
+        <div class="center-dot"></div>
+        <div class="row-right">
+          <div class="squircle-icon dark">🚀</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 3: PRACTICAL GROUND PLAYBOOK (HOW TO ONBOARD)     -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 003 • FIELD OPERATING MANUAL</div>
+        <h2>Practical Guide: How to Onboard Each Location</h2>
+        <p>Exactly what time to visit, who to talk to, what to install, and the exact word-for-word pitch.</p>
+      </div>
+
+      <!-- GYMS -->
+      <div class="howto-card">
+        <div class="howto-header">
+          <div class="howto-title">
+            <span>🏋️ Place 1: Commercial Gyms & Fitness Clubs</span>
+          </div>
+          <div class="howto-badges">
+            <span class="badge-pill badge-red">Highest Priority</span>
+            <span class="badge-pill badge-cyan">Target: 50 Gyms</span>
+          </div>
+        </div>
+        <div class="howto-grid-3">
+          <div class="howto-block">
+            <h4>⏰ Best Time to Visit</h4>
+            <p><strong>11:30 AM to 1:30 PM</strong> or <strong>2:30 PM to 4:30 PM</strong>. The gym is empty between peak morning and evening workouts. The owner or general manager is sitting relaxed at the reception desk.</p>
+          </div>
+          <div class="howto-block">
+            <h4>📦 Physical Asset to Install</h4>
+            <ul>
+              <li><strong>Reception Counter:</strong> A5 High-Gloss Acrylic Standee with QR Code ("Download to Track Workouts").</li>
+              <li><strong>Weight Room:</strong> Mirror sticker decals near dumbbell racks.</li>
+              <li><strong>Locker Room:</strong> Door poster near water dispenser.</li>
+            </ul>
+          </div>
+          <div class="howto-block">
+            <h4>🤝 The Winning Deal We Offer</h4>
+            <p>Give the gym owner free access to Trinity-Fit's Club Dashboard to track gym member attendance, plus a <strong>10% referral cut</strong> on any personal training packages booked through their gym's QR code.</p>
+          </div>
+        </div>
+        <div class="script-box">
+          <h5>Exact Word-for-Word Pitch to Gym Owner:</h5>
+          <p>"Hi Sir, we know personal trainers here use WhatsApp and paper diaries to manage client workouts, which looks unorganized. We built Trinity-Fit — a modern gym app. We want to give your gym free member management software. All we ask in return is to put this small premium acrylic standee on your reception counter. Whenever your members book a trainer on the app, we also share 10% revenue with your gym. Can we set it up on your counter today?"</p>
+        </div>
+      </div>
+
+      <!-- HEALTHY CAFES -->
+      <div class="howto-card">
+        <div class="howto-header">
+          <div class="howto-title">
+            <span>🥗 Place 2: Healthy Cafes, Salad & Smoothie Bars</span>
+          </div>
+          <div class="howto-badges">
+            <span class="badge-pill badge-green">Diet Channel</span>
+            <span class="badge-pill badge-gold">Target: 30 Cafes</span>
+          </div>
+        </div>
+        <div class="howto-grid-3">
+          <div class="howto-block">
+            <h4>⏰ Best Time to Visit</h4>
+            <p><strong>3:00 PM to 5:00 PM</strong> on weekdays (between lunch and dinner rush). Talk directly to the cafe owner or store manager.</p>
+          </div>
+          <div class="howto-block">
+            <h4>📦 Physical Asset to Install</h4>
+            <ul>
+              <li><strong>Dining Tables:</strong> Wooden base Table Tent QR cards.</li>
+              <li><strong>Billing Counter:</strong> Bill-folder insert flyer with QR discount code.</li>
+              <li><strong>Drink Coasters:</strong> Branded Trinity-Fit protein coasters.</li>
+            </ul>
+          </div>
+          <div class="howto-block">
+            <h4>🤝 The Winning Deal We Offer</h4>
+            <p>We feature their cafe as a <em>"Verified Healthy Food Spot"</em> inside our app's diet section for free. In return, they keep our tent cards on their tables.</p>
+          </div>
+        </div>
+        <div class="script-box">
+          <h5>The Offer Printed on Table Card:</h5>
+          <p>"Wondering how many calories & protein are in your meal today? Scan this QR code to calculate your exact daily calorie budget for free $\rightarrow$ Show your screen to the cashier to get 10% OFF your protein smoothie right now!"</p>
+        </div>
+      </div>
+
+      <!-- PREMIUM SALONS -->
+      <div class="howto-card">
+        <div class="howto-header">
+          <div class="howto-title">
+            <span>💇 Place 3: Premium Salons & Aesthetic Spas</span>
+          </div>
+          <div class="howto-badges">
+            <span class="badge-pill badge-gold">High Spenders</span>
+            <span class="badge-pill badge-purple">Target: 20 Salons</span>
+          </div>
+        </div>
+        <div class="howto-grid-3">
+          <div class="howto-block">
+            <h4>⏰ The Secret Opportunity</h4>
+            <p>Clients sit in salon chairs for <strong>45 to 90 minutes</strong> getting hair coloring, keratin, or facials. They are bored, staring at their phones or table magazines, ready to read about fitness.</p>
+          </div>
+          <div class="howto-block">
+            <h4>📦 Physical Asset to Install</h4>
+            <ul>
+              <li><strong>Waiting Lounge:</strong> High-end laminated Lookbook on coffee table.</li>
+              <li><strong>Mirror Stations:</strong> Discreet small QR tent card next to hair products.</li>
+            </ul>
+          </div>
+          <div class="howto-block">
+            <h4>🤝 The Winning Deal We Offer</h4>
+            <p>Cross-promotion: Free 7-Day Personal Coaching voucher for every salon client spending over ₹2,000 on hair/skin services.</p>
+          </div>
+        </div>
+        <div class="script-box">
+          <h5>The Hook on the Salon Card:</h5>
+          <p>"Getting ready for a wedding or vacation? Hair and skin look 10x better with a toned body. Scan here to hire top celebrity-certified fitness coaches from your city. First 7 days free trial."</p>
+        </div>
+      </div>
+
+      <!-- GATED SOCIETIES -->
+      <div class="howto-card">
+        <div class="howto-header">
+          <div class="howto-title">
+            <span>🏘️ Place 4: Gated High-Rise Societies (The Sunday Camp)</span>
+          </div>
+          <div class="howto-badges">
+            <span class="badge-pill badge-cyan">Bulk Installs</span>
+            <span class="badge-pill badge-green">50–150 Users per Camp</span>
+          </div>
+        </div>
+        <div class="howto-grid-3">
+          <div class="howto-block">
+            <h4>📅 When to Run</h4>
+            <p><strong>Sunday mornings, 7:00 AM to 11:30 AM</strong> near the society clubhouse or jogging track when residents come down for morning walks.</p>
+          </div>
+          <div class="howto-block">
+            <h4>📦 Equipment to Carry</h4>
+            <ul>
+              <li>1 Folding canopy table + 2 Trinity-Fit roll-up banners.</li>
+              <li>1 Digital Body Composition Analyzer Scale (checks BMI, body fat %, muscle mass).</li>
+              <li>100 free branded shaker bottles for participants.</li>
+            </ul>
+          </div>
+          <div class="howto-block">
+            <h4>🤝 How to Get Permission</h4>
+            <p>Meet the RWA (Residents Welfare Association) Secretary on Thursday evening. Pitch it as a <strong>"Complimentary Community Health & Wellness Camp"</strong> (100% free, zero cost to society).</p>
+          </div>
+        </div>
+        <div class="script-box">
+          <h5>The Funnel at the Camp:</h5>
+          <p>"Uncle/Aunty, please step on the body analyzer scale for your free health assessment. To see your full 6-page report including visceral fat and metabolic age, simply scan this QR code and download Trinity-Fit — your report opens instantly on your phone!"</p>
+        </div>
+      </div>
+
+      <!-- AIRPORTS & BILLBOARDS -->
+      <div class="howto-card">
+        <div class="howto-header">
+          <div class="howto-title">
+            <span>✈️ Places 5, 6 & 7: Airports, Billboards & Marathons</span>
+          </div>
+          <div class="howto-badges">
+            <span class="badge-pill badge-purple">Mass City Fame</span>
+            <span class="badge-pill badge-gold">Months 2 & 3</span>
+          </div>
+        </div>
+        <div class="howto-grid-3">
+          <div class="howto-block">
+            <h4>✈️ Airports & Transit Lounges</h4>
+            <p>Target busy business executives. Run 10-second vertical screen ads in departure lounge TVs: <em>"Busy travel schedule? 15-minute hotel room workouts with personal coach accountability in your pocket."</em></p>
+          </div>
+          <div class="howto-block">
+            <h4>🏙️ Corridor Billboards</h4>
+            <p>Rent 2 high-contrast hoardings right on the main avenue leading to top gyms. Simple, bold text: <em>"Your Gym. Your Coach. One App. Download Trinity-Fit on App Store & Google Play."</em></p>
+          </div>
+          <div class="howto-block">
+            <h4>🏃 Marathons & Fitness Challenges</h4>
+            <p>Set up a branded pull-up bar canopy at local 5K/10K marathons: <em>"Hit 15 clean pull-ups, download our app, and win a premium Trinity-Fit shaker bottle right here!"</em> (Creates massive crowd buzz).</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 4: THE COACH ONBOARDING MANUAL                    -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 004 • TRAINER RECRUITMENT</div>
+        <h2>How We Onboard 10 Gym Trainers Every Week</h2>
+        <p>Remember: 1 trainer brings 20 paying clients immediately. Here is the exact script and setup drill.</p>
+      </div>
+
+      <div class="howto-grid-3">
+        <div class="howto-block">
+          <h4>Step 1: The Floor Approach</h4>
+          <p>Our sales rep walks up to a trainer resting between client sessions: <em>"Bhaiya, we see you train clients here. You have great physique and knowledge. Do you train online clients as well?"</em></p>
+        </div>
+        <div class="howto-block">
+          <h4>Step 2: Kill Their Pain Point</h4>
+          <p><em>"How do you currently send diet plans and collect money? WhatsApp and GooglePay? What if clients forget to pay? What if you have 25 clients and WhatsApp becomes pure chaos?"</em></p>
+        </div>
+        <div class="howto-block">
+          <h4>Step 3: The 10-Minute Setup</h4>
+          <p>Sit with the coach right there on the gym bench. Take their best photo, client transformation picture, certification name, and monthly price (e.g. ₹3,500/month). Upload to app in 10 minutes.</p>
+        </div>
+      </div>
+
+      <div class="script-box">
+        <h5>The Exact WhatsApp Message the Coach Sends to His 20 Clients:</h5>
+        <p>"Hey Rahul! From this week, I am upgrading our personal training to our new official coaching software on Trinity-Fit. All your workout logs, weekly weight check-ins, and diet charts are now tracked inside the app. Please click this link, download the app, and connect with me: [Coach Referral Link]. Let's crush this week's goals!"</p>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 5: DAILY SOCIAL MEDIA & MARKETING PLAYBOOK        -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 005 • DIGITAL ENGINE</div>
+        <h2>Daily Marketing & Social Media Routine</h2>
+        <p>Exactly what to post, what time to post, and how to run the WhatsApp VIP group.</p>
+      </div>
+
+      <div class="howto-grid-3">
+        <div class="howto-block">
+          <h4>🎬 9:00 AM Reel: Gym Humor & Relatability</h4>
+          <p>Short 7–10 second funny reel using trending audio. E.g., *"When you took pre-workout but your gym partner cancels"*. Drives high shares and saves on Instagram.</p>
+        </div>
+        <div class="howto-block">
+          <h4>🏋️ 1:00 PM Reel: Form Fix & Education</h4>
+          <p>15-second split screen: *"Stop Squatting Like This ❌ | Do This Instead ✅"*. Show target muscle highlights. Caption: *"For custom workout plans, link in bio."*</p>
+        </div>
+        <div class="howto-block">
+          <h4>📊 7:00 PM Reel: Free Tool Spotlight</h4>
+          <p>Demonstrate our free 1RM or Macro Calculator tool: *"How much protein do you actually need to lose belly fat? Link in bio calculates it in 10 seconds for free."*</p>
+        </div>
+      </div>
+
+      <div class="howto-block" style="margin-top: 1.25rem;">
+        <h4>💬 The WhatsApp VIP "Trinity Alpha Club" Daily Blueprint</h4>
+        <ul>
+          <li><strong>7:30 AM:</strong> Send 1 powerful fitness motivation quote & daily water reminder (Drink 1L before noon).</li>
+          <li><strong>2:00 PM:</strong> Quick healthy lunch tip / low-calorie snack ideas for office workers.</li>
+          <li><strong>8:30 PM:</strong> Community leaderboard shoutout: Celebrate the top 3 users who logged workouts today.</li>
+          <li><strong>Friday 8:00 PM:</strong> 30-minute live voice chat Q&A with one of our top certified coaches.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 6: 12-WEEK STEP-BY-STEP CALENDAR (DAY 1 TO 90)    -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 006 • 12-WEEK MASTER SCHEDULE</div>
+        <h2>The 90-Day Execution Calendar (Week by Week)</h2>
+        <p>Detailed daily tasks from Day 1 to Day 90 to hit 10,000 users and ₹5,00,000 monthly revenue.</p>
+      </div>
+
+      <!-- MONTH 1: WEEKS 1 TO 4 -->
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin: 1.5rem 0 1rem;">📅 Month 1: Ground Seeding & First ₹1,00,000 Revenue</h3>
+
+      <div class="week-detail-box">
+        <div class="week-detail-top">
+          <div class="week-detail-title">⚡ Week 1: The Day-1 Launch & Inner Circle Burst</div>
+          <span class="week-detail-target">Target: 200 – 300 Users</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Day 1 (Launch Day):</strong>
+            Call 30 close friends and family. Everyone downloads app, writes a 5-star review, and shares a screenshot on WhatsApp Status. (Hit 20–30 users).
+          </div>
+          <div class="day-step-item">
+            <strong>Days 2–3:</strong>
+            Visit first 5 tier-1 partner gyms. Install acrylic standees on reception counters. Onboard first 5 personal trainers.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 4–5:</strong>
+            Trainers send the invite link to their trainees. First 80 clients migrate to app. Place table tent cards in 5 healthy cafes.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 6–7:</strong>
+            Review QR scan analytics. Fix any minor user questions. Reach <strong>300 total downloads by Sunday night!</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-detail-box cyan">
+        <div class="week-detail-top">
+          <div class="week-detail-title">🥗 Week 2: Cafes, Salons & Social Reels Ignition</div>
+          <span class="week-detail-target">Target: 500 Cumulative Users</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Days 8–10:</strong>
+            Deploy table tent cards in 15 cafes and 5 premium salons. Start the 3x daily reels schedule on Instagram.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 11–12:</strong>
+            Launch ₹400/day localized Instagram ad campaign targeting people aged 18–35 within 5 km of partner gyms.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 13–14:</strong>
+            Onboard 5 more independent personal trainers. Reach <strong>500 active users</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="week-detail-box gold">
+        <div class="week-detail-top">
+          <div class="week-detail-title">🏘️ Week 3: Gated Society Sunday Health Camps</div>
+          <span class="week-detail-target">Target: 850 Cumulative Users</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Days 15–17:</strong>
+            Meet RWA secretaries of 2 large apartment complexes. Get permission for Sunday morning free health checkup stall.
+          </div>
+          <div class="day-step-item">
+            <strong>Day 18 (Sunday):</strong>
+            Run the 7:00 AM – 11:00 AM health camp. Test 120 residents; all download app to see full BMI & body fat report.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 19–21:</strong>
+            Launch WhatsApp VIP "Trinity Alpha Club". Distribute free shaker bottles to top workout loggers. Reach <strong>850 users</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="week-detail-box green">
+        <div class="week-detail-top">
+          <div class="week-detail-title">💰 Week 4: First Cash & Revenue Milestone</div>
+          <span class="week-detail-target">Milestone: 1,200 Users & ₹1,00,000 Revenue</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Days 22–25:</strong>
+            First wave of client package purchases. 25 coaching packages sold at average ₹3,500 + Pro subscriptions.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 26–28:</strong>
+            Send our Month-1 Traction Letter to 10 angel investor prospects showing 1,200 active users and verified revenue.
+          </div>
+          <div class="day-step-item">
+            <strong>Days 29–30:</strong>
+            Month-1 review: <strong>1,200 Active Users & ₹1,00,000 Gross Run-Rate Achieved!</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 2: WEEKS 5 TO 8 -->
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin: 2rem 0 1rem;">🚀 Month 2: Influencer Acceleration & ₹3,00,000 Revenue</h3>
+
+      <div class="week-detail-box">
+        <div class="week-detail-top">
+          <div class="week-detail-title">🔥 Weeks 5–6 (Days 31–45): Trainer Ambassadors & 30-Day Shred</div>
+          <span class="week-detail-target">Target: 2,000 Cumulative Users</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Influencer Contracts:</strong>
+            Sign 10 local gym influencers (3k–20k followers). Give them free branded gym hoodies + 10% rev-share.
+          </div>
+          <div class="day-step-item">
+            <strong>30-Day Shred Challenge:</strong>
+            Launch in-app challenge. Leaderboard tracks daily workout consistency. Top winner gets ₹10,000 gym voucher.
+          </div>
+          <div class="day-step-item">
+            <strong>Gym Expansion:</strong>
+            Expand acrylic stands into 25 more fitness centers. Hit <strong>2,000 cumulative users</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="week-detail-box green">
+        <div class="week-detail-top">
+          <div class="week-detail-title">🏙️ Weeks 7–8 (Days 46–60): Outdoor Billboards & Scale</div>
+          <span class="week-detail-target">Milestone: 3,000 Users & ₹3,00,000 Revenue</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Road Billboards:</strong>
+            Erect 2 large hoardings on the city's primary gym corridors: <em>"Your Gym. Your Coach. One App."</em>
+          </div>
+          <div class="day-step-item">
+            <strong>Onboard 25 More Trainers:</strong>
+            Expand coach supply. Now 50+ coaches are actively managing clients on Trinity-Fit.
+          </div>
+          <div class="day-step-item">
+            <strong>Month 2 Result:</strong>
+            <strong>3,000 Active Users & ₹3,00,000 Monthly Revenue Achieved!</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- MONTH 3: WEEKS 9 TO 12 -->
+      <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin: 2rem 0 1rem;">🏆 Month 3: Regional Dominance & ₹5,00,000 Scale Milestone</h3>
+
+      <div class="week-detail-box gold">
+        <div class="week-detail-top">
+          <div class="week-detail-title">✈️ Weeks 9–10 (Days 61–75): High-Transit & Celebrity Endorsements</div>
+          <span class="week-detail-target">Target: 6,500 Cumulative Users</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Airport Lounge Screens:</strong>
+            Run 10-second vertical display ads in departure terminals targeting busy business travelers.
+          </div>
+          <div class="day-step-item">
+            <strong>Celebrity / Politician Testimonials:</strong>
+            Get short video shoutouts from regional actors, athletes, and civic leaders supporting youth fitness.
+          </div>
+          <div class="day-step-item">
+            <strong>Reach:</strong>
+            Cross <strong>6,500 active users</strong> across the city.
+          </div>
+        </div>
+      </div>
+
+      <div class="week-detail-box green">
+        <div class="week-detail-top">
+          <div class="week-detail-title">🎖️ Weeks 11–12 (Days 76–90): Marathon Title Sponsorship & Fundraise</div>
+          <span class="week-detail-target">Final Goal: 10,000 Users & ₹5,00,000 Revenue</span>
+        </div>
+        <div class="day-steps-list">
+          <div class="day-step-item">
+            <strong>Marathon Sponsorship:</strong>
+            Main hydration & pull-up challenge partner at regional marathon. 2,000+ runners download app on event weekend.
+          </div>
+          <div class="day-step-item">
+            <strong>Institutional Fundraise:</strong>
+            Present verified 10,000 user retention metrics and ₹5 Lakhs monthly run-rate to venture capital funds.
+          </div>
+          <div class="day-step-item">
+            <strong>Scale Milestone:</strong>
+            <strong>10,000 Active Users & ₹5,00,000 Monthly Revenue Hit!</strong> Ready for City 2 expansion!
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 7: INVESTOR DECK & COMPETITOR TABLE               -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 007 • INVESTOR DEFENSE</div>
+        <h2>Why We Win Against All Existing Apps</h2>
+        <p>Clear, undeniable reasons why Trinity-Fit is superior for investors and customers.</p>
+      </div>
+
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>HealthifyMe</th>
+              <th>Fittr</th>
+              <th>Cult.fit</th>
+              <th>Hevy / Strong</th>
+              <th>Trinity-Fit (Us)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>What It Does</strong></td>
+              <td>Calorie Counting & AI</td>
+              <td>Coach Marketplace</td>
+              <td>Gym Chain Access</td>
+              <td>Solo Set Tracker</td>
+              <td><strong>Unified OS + Coaches + Gym CRM</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Coach Interaction</strong></td>
+              <td>Automated / Impersonal</td>
+              <td>WhatsApp / Phone Calls</td>
+              <td>Group Instructors</td>
+              <td>None</td>
+              <td><strong>In-App Chat & Live Set Sync</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Gym Management Tool</strong></td>
+              <td>No</td>
+              <td>No</td>
+              <td>Proprietary Only</td>
+              <td>No</td>
+              <td><strong>Free Software for Local Trainers</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Commission Rate</strong></td>
+              <td>Expensive Subscription</td>
+              <td>25% – 35% Take-Rate</td>
+              <td>Annual Package</td>
+              <td>Freemium Solo</td>
+              <td><strong>15% – 18% Fair Take-Rate</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 8: DAILY TEAM RESPONSIBILITIES                    -->
+    <!-- ========================================================= -->
+    <div class="content-section">
+      <div class="section-head">
+        <div class="process-pill"><span class="dot"></span> 008 • WHO DOES WHAT</div>
+        <h2>Daily Team Accountability & Weekly Goals</h2>
+        <p>Clear, practical daily jobs for each person so nothing is forgotten.</p>
+      </div>
+
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Team Member</th>
+              <th>Daily Practical Job (Where to spend time)</th>
+              <th>Weekly Goal to Hit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>🏃 Field Sales Guy</strong></td>
+              <td>Spends 4 hours on the ground. Visits 5 gyms, 3 cafes, and 2 salons daily. Inspects QR standee conditions.</td>
+              <td><strong>15 new locations signed up per week</strong></td>
+            </tr>
+            <tr>
+              <td><strong>🏋️ Coach Manager</strong></td>
+              <td>Calls 10 gym trainers daily. Spends 15 mins setting up their profiles and helping them invite their 20 clients.</td>
+              <td><strong>8 new trainers active on app per week</strong></td>
+            </tr>
+            <tr>
+              <td><strong>📱 Social Media Creator</strong></td>
+              <td>Shoots and edits 3 short reels every day. Manages morning quotes and evening recaps in WhatsApp VIP group.</td>
+              <td><strong>100k views on Instagram every week</strong></td>
+            </tr>
+            <tr>
+              <td><strong>⭐ VIP & Influencer Lead</strong></td>
+              <td>Sends free gift packages to 5 influencers daily. Coordinates video shoutouts with local actors/celebrities.</td>
+              <td><strong>3 influencer video posts per week</strong></td>
+            </tr>
+            <tr>
+              <td><strong>👑 Founder / CEO</strong></td>
+              <td>Monitors bank account, leads daily 15-minute morning standup, talks to investors, and ensures weekly targets are met.</td>
+              <td><strong>Hit monthly user & revenue numbers on time</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
